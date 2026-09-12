@@ -1,0 +1,14 @@
+# 凭据与本地隐私 —— 绝不入库
+credentials*.json
+credentials*.yaml
+*.local.json
+.env
+.env.*
+
+# 原始素材缓存（答案图片/网页快照），知识库以 md 为准
+.cache/
+
+# 系统与编辑器
+Thumbs.db
+Desktop.ini
+.DS_Store
