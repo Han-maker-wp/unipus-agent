@@ -98,7 +98,7 @@
 | 教材 | 转录状态 | 答案源 | 本地笔记 |
 | --- | --- | --- | --- |
 | 新编大学英语 综合教程1答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247495993&idx=1&sn=79a0da91d0dce96fac3b197d7a0eddde&scene=21) | [新编大学英语 综合教程1](./新编大学英语（第四版）/新编大学英语 综合教程1.md) |
-| 新编大学英语 综合教程2答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247495993&idx=2&sn=b30256a4f603ff73ac34f3dd7920b124&scene=21) | [新编大学英语 综合教程2](./新编大学英语（第四版）/新编大学英语 综合教程2.md) |
+| 新编大学英语 综合教程2答案 | ✅ 全书8单元已转录 | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247495993&idx=2&sn=b30256a4f603ff73ac34f3dd7920b124&scene=21) | [新编大学英语 综合教程2](./新编大学英语（第四版）/新编大学英语 综合教程2.md) |
 | 新编大学英语 综合教程3答案 | ✅ 全书8单元已转录 | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247495993&idx=3&sn=9b442022741f164aee09ec3a4788d997&scene=21) | [新编大学英语 综合教程3](./新编大学英语（第四版）/新编大学英语 综合教程3.md) |
 | 新编大学英语 综合教程4答案 | ❌ 源缺失 | - | - |
 | 新编大学英语 视听说教程1答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247495993&idx=4&sn=0887e1eac0d1df9d663c316bf5056d2e&scene=21) | [新编大学英语 视听说教程1](./新编大学英语（第四版）/新编大学英语 视听说教程1.md) |
