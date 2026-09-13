@@ -1,5 +1,8 @@
-// extract_questions.js — U校园 courseware 页面题目提取回调
-// 用法：整段粘进 tab.playwright.evaluate(...) 执行，返回 JSON。
+// extract_questions.js — U校园 courseware 页面题目提取回调（宿主无关：只读函数）
+// 用法：本文件是「函数源码」，在任意浏览器自动化的页面上下文执行：
+//   Playwright:  const questions = await page.evaluate(eval(fs.readFileSync(...,'utf8')))
+//   宿主内置浏览器: 同上（部分宿主只认函数对象，const fn = eval(src) 后传入）
+//   独立运行示例: scripts/playwright-runner.example.js
 // 纪律：只读函数，绝不点击任何按钮、绝不提交。
 // 真机校准：2026-09-12《新编大学英语（第四版）综合教程3》Unit 1 Banked cloze。
 () => {

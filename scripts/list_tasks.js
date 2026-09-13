@@ -1,5 +1,6 @@
-// list_tasks.js — U校园教程详情页单元/小节/任务目录提取回调
-// 用法：在 https://uai.unipus.cn/app/cmgt/resource-detail/<id> 页面（教程学习页签）粘进 evaluate。
+// list_tasks.js — U校园教程详情页单元/小节/任务目录提取回调（宿主无关：只读函数）
+// 用法：在 https://uai.unipus.cn/app/cmgt/resource-detail/<id> 页面（教程学习页签）执行本函数
+// （Playwright / 浏览器类 MCP / 宿主内置浏览器均可，传参形态见 browser-adapters.md）。
 // 纪律：只读函数。
 // 真机校准：2026-09-12《新编大学英语（第四版）综合教程3》。
 () => {

@@ -1,5 +1,6 @@
-// list_courses.js — U校园课程管理页课程清单提取回调
-// 用法：在 https://uai.unipus.cn/app/cmgt/course-management 页面整段粘进 evaluate 执行。
+// list_courses.js — U校园课程管理页课程清单提取回调（宿主无关：只读函数）
+// 用法：在 https://uai.unipus.cn/app/cmgt/course-management 页面上下文执行本函数
+// （Playwright / 浏览器类 MCP / 宿主内置浏览器均可，传参形态见 browser-adapters.md）。
 // 纪律：只读函数。
 // 真机校准：2026-09-12。卡片字段为「标签：值」文本对，按文本启发式解析。
 () => {

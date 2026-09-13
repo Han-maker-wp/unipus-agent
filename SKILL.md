@@ -4,8 +4,11 @@ description: |-
   操作网页版 U校园（Unipus / U校园AI版 uai.unipus.cn）的全能技能：登录课程、定位单元任务与作业、从内置答案知识库（21 系列/约200本教材）检索答案、AI 辅助作答（默认只填不提交，每次必须当场询问用户提交策略）、按配置时长挂机积累学习时长（默认10分钟/节，带心跳提示）、提交前多重答案核查。当用户提到 U校园、U校园AI版、unipus、Unipus、新编大学英语、新视野、新标准、大学英语作业、刷时长、做英语作业时一律使用本技能，即使用户没有明确说出"U校园"三个字。
 license: MIT
 compatibility: >-
-  需要一个浏览器自动化环境（ZCode browser-use / Playwright / chrome-devtools MCP 均可，
-  语义动作映射见 references/browser-adapters.md）。
+  通用 Agent Skill（宿主无关）：只要宿主 AI 具备 ①浏览器自动化能力（独立 Playwright /
+  浏览器类 MCP / 内置浏览器均可）②本地文件读写与文本检索，即可完整运行。
+  支持 Agent Skills 标准的宿主（Claude Code、ZCode、Codex CLI 等）直接拷贝本目录安装；
+  其他 agent 按 references/agent-integration.md 的三种方式注入。
+  语义动作到具体工具的映射见 references/browser-adapters.md。
 metadata:
   version: 0.1.0
   homepage: https://github.com/Han-maker-wp/unipus-agent
@@ -45,7 +48,8 @@ metadata:
 | 提交策略/提交后核对 | references/submit-policy.md |
 | 补录新教材答案（自扩充） | references/kb-builder.md |
 | 出错了 | references/pitfalls.md |
-| 换浏览器工具 | references/browser-adapters.md |
+| 换浏览器工具 / 了解能力要求 | references/browser-adapters.md |
+| 在其他 agent 工具接入（无技能机制时） | references/agent-integration.md |
 
 ## 作业主流程速览
 

@@ -41,7 +41,7 @@ python tools/crawl_directory.py --html .cache/html/directory.html
 `.cache/<书代号>-unit-images.json`，格式 `{"1":{"status":"ok","imgs":[...]}}`。
 
 **反爬纪律（实测）**：mp.weixin.qq.com 同 IP 连续抓 10 篇左右触发「环境异常」验证页。
-- 用真实浏览器访问（agent browser），节奏 ≥8-12s/篇 + 随机抖动；
+- 用真实浏览器访问（宿主的浏览器自动化或本地 Playwright 打开的浏览器），节奏 ≥8-12s/篇 + 随机抖动；
 - 被拦（`#js_content` 不存在或标题变「微信公众平台」）→ 冷却 60s+ 再重试，最多 3 次；
 - 每篇抓完立刻落盘（断点续跑，重跑只补缺）。
 

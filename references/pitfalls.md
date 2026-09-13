@@ -4,7 +4,7 @@
 
 | # | 现象 | 原因 | 解决 |
 | --- | --- | --- | --- |
-| 1 | 点任务条目报「covered by unipus-tabs_tabItemContainer」或「pointer probe returned no click point」 | 任务条目被吸顶单元页签遮挡/文本节点无点击点 | `scrollIntoView({block:"center"})` 后重试；仍失败取 `getBoundingClientRect` 中心坐标用坐标点击兜底 |
+| 1 | 点任务条目无响应：报「covered by unipus-tabs_tabItemContainer」/「pointer probe returned no click point」（ZCode browser-use），Playwright 同类表现为 click 超时 "element is outside of the viewport / intercepted" | 任务条目被吸顶单元页签遮挡/文本节点无点击点 | `scrollIntoView({block:"center"})` 后重试；仍失败取 `getBoundingClientRect` 中心坐标用坐标点击兜底（Playwright 用 `page.mouse.click`） |
 | 2 | 任务条目（Banked cloze 等）用 getByRole("button") 找不到 | 任务条目是普通 generic 文本，不是 button | `getByText(名称,{exact:true})` + count()==1 再点 |
 | 3 | 点「我的课程」strict violation 命中 2 个元素 | 侧边栏标题和返回链接同名 | 用 `getByRole("link",{name:"我的课程"})` |
 | 4 | 课程卡片点了没反应 | 课程名 generic 不可点，入口在教材名上 | 点卡片内「教材名 paragraph」（如「新编大学英语（第四版）综合教程 3（2023版）」） |

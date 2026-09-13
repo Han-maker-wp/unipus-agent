@@ -37,21 +37,20 @@ flowchart LR
     K --> L[下一节任务]
 ```
 
-## 🚀 30 秒接入（给 AI 用）
+## 🔌 接入任意 AI（三种方式，宿主无关）
 
-本仓库是一个标准 **Agent Skill**（兼容 Claude Code / ZCode 等支持 SKILL.md 的智能体环境）：
+本技能的资产只有两类：**Markdown 手册**（给 AI 读的流程与纪律）和**纯 JS 页面回调**（标准浏览器
+evaluate 语法，零依赖）。任何能操作浏览器、能读本地文件的 AI 都能用：
 
-```bash
-# 1. 克隆到技能目录
-git clone https://github.com/Han-maker-wp/unipus-agent.git \
-    ~/.claude/skills/unipus        # ZCode 用户放 ~/.agents/skills/unipus
+| 你的环境 | 接入方式 |
+| --- | --- |
+| 支持 Agent Skills 标准（Claude Code / ZCode / Codex CLI…） | 整个目录拷进技能目录即装即用（`~/.claude/skills/unipus` 或 `~/.agents/skills/unipus`） |
+| 有规则文件但无技能机制（Cursor / Cline / Windsurf…） | 把 [agent-integration.md](references/agent-integration.md) 里的现成片段粘进 `AGENTS.md` / `.cursor/rules` |
+| 裸 LLM / 自研 agent / API 编排 | SKILL.md 进 system prompt + 挂任意浏览器 MCP；或直接跑 [scripts/playwright-runner.example.js](scripts/playwright-runner.example.js)（纯 Node + Playwright，无需任何 agent） |
 
-# 2. 对 AI 说人话即可
-「帮我把 U校园 综合教程3 Unit 1 的 Read and practice 做了，每节留 10 分钟时长」
-```
-
-需要的环境：任意浏览器自动化能力（ZCode browser-use / Playwright / chrome-devtools MCP，
-见 [references/browser-adapters.md](references/browser-adapters.md)）+ Python 3.10+（仅知识库工具需要）。
+**环境要求**：任意一种浏览器自动化（独立 Playwright / 浏览器类 MCP / 宿主内置浏览器）+
+本地文件读取；Python 3.10+ 仅知识库建库工具需要。完整能力清单与各工具映射见
+[browser-adapters.md](references/browser-adapters.md)。
 
 首次运行 AI 会问你要 **U校园账号密码**（只在本会话使用，不落盘）以及 **每节停留时长**（默认 10 分钟）。
 
@@ -97,8 +96,8 @@ A: 看 INDEX.md 是否有源链接；有链接就能按 kb-builder.md 让 AI 现
 
 ```
 ├── SKILL.md               # AI 技能入口：纪律红线 + 路由表 + 流程速览
-├── references/            # 9 份分场景手册（登录/作答/核查/时长/提交/建库/踩坑…）
-├── scripts/               # 页面回调脚本：课程/目录/题目提取、答案回填（真机校准）
+├── references/            # 10 份分场景手册（登录/作答/核查/时长/提交/建库/踩坑/任意agent接入…）
+├── scripts/               # 页面回调脚本（宿主无关）+ Playwright 独立运行示例
 ├── knowledge/             # 答案知识库（Markdown，AI 可检索）
 │   ├── INDEX.md           # 21 系列 / 约 200 本总索引
 │   └── 新编大学英语（第四版）/…
