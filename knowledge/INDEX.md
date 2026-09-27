@@ -8,7 +8,7 @@
 
 | 教材 | 转录状态 | 答案源 | 本地笔记 |
 | --- | --- | --- | --- |
-| 新视野大学英语 读写教程1答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247508264&idx=1&sn=94e8eecaea9c3eb9ef94373953f6a8cd&scene=21) | [新视野大学英语 读写教程1](./新视野大学英语（第四版）/新视野大学英语 读写教程1.md) |
+| 新视野大学英语 读写教程1答案 | ✅ Unit 1-4/6 全转录 · Unit 5 部分 | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247508264&idx=1&sn=94e8eecaea9c3eb9ef94373953f6a8cd&scene=21) | [新视野大学英语 读写教程1](./新视野大学英语（第四版）/新视野大学英语 读写教程1.md) |
 | 新视野大学英语 读写教程2答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247508264&idx=2&sn=a38a4de116b714be3ee7eb1223607204&scene=21) | [新视野大学英语 读写教程2](./新视野大学英语（第四版）/新视野大学英语 读写教程2.md) |
 | 新视野大学英语 读写教程3答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247508264&idx=3&sn=25aa46bcb9453b17068f9d402e73c1f3&scene=21) | [新视野大学英语 读写教程3](./新视野大学英语（第四版）/新视野大学英语 读写教程3.md) |
 | 新视野大学英语 读写教程4答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247508264&idx=4&sn=10c53681e7d8c32a9f2425c3163c042c&scene=21) | [新视野大学英语 读写教程4](./新视野大学英语（第四版）/新视野大学英语 读写教程4.md) |

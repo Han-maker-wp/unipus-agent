@@ -32,6 +32,14 @@ KNOWN_SECTIONS = {
     "Extended listening", "Speaking for communication", "Further listening",
     "Scripts", "Viewing & speaking", "Viewing and understanding",
     "Unit project",
+    # 新视野读写系列小节词表（第四版 U校园任务结构）
+    "Reading the text", "Pre-reading activities", "Vocabulary learning",
+    "Reading comprehension", "Understanding the text", "Critical thinking",
+    "Critical thinking skill", "Language focus", "Words in use",
+    "Expressions in use", "Structure analysis and writing", "Structure analysis",
+    "Structured writing", "Reading skills", "Collocation", "Stories of China",
+    "Sentence translation", "Paragraph translation", "Unit review", "Unit test",
+    "Quiz", "Practicing", "Reading",
 }
 
 PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|XXX|占位|＼width|[\u4e00-\u9fff]{0,2}略）?$)")
