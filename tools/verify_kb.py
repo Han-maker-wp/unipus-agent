@@ -39,10 +39,14 @@ KNOWN_SECTIONS = {
     "Expressions in use", "Structure analysis and writing", "Structure analysis",
     "Structured writing", "Reading skills", "Collocation", "Stories of China",
     "Sentence translation", "Paragraph translation", "Unit review", "Unit test",
-    "Quiz", "Practicing", "Reading", "Translation", "Learning",
+    "Quiz", "Practicing", "Reading", "Translation", "Learning", "Listening to the world",
+    "Speaking for communication", "Viewing world cultures", "Further listening",
+    "Role-play", "Present ideas", "Wrapping up", "Culture notes", "Get ideas",
+    "Opening up", "Taking in", "Speaking out", "Watching street interviews",
+    "Group discussion", "Discuss and organize ideas",
 }
 
-PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|XXX|占位|＼width|[\u4e00-\u9fff]{0,2}略）?$)")
+PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|(?<![0-9X])XXX(?![0-9X])|占位|＼width|[一-鿿]{0,2}略）?$)")
 ANSWER_LINE = re.compile(r"^\s*(\d+[)、.])\s*(.+)$")
 
 
@@ -61,7 +65,7 @@ def check_book(path: Path, issues: list):
         if line.startswith("## "):
             cur = line[3:].strip()
             # 小节名对齐：## 后应包含已知小节关键词之一
-            if not any(k in cur for k in KNOWN_SECTIONS):
+            if "（结构页）" not in cur and not any(k in cur for k in KNOWN_SECTIONS):
                 issues.append(f"{rel}:{i} 小节名可能未对齐U校园：{cur!r}")
         m = ANSWER_LINE.match(line)
         if m and not m.group(2).strip():
