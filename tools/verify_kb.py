@@ -39,7 +39,7 @@ KNOWN_SECTIONS = {
     "Expressions in use", "Structure analysis and writing", "Structure analysis",
     "Structured writing", "Reading skills", "Collocation", "Stories of China",
     "Sentence translation", "Paragraph translation", "Unit review", "Unit test",
-    "Quiz", "Practicing", "Reading",
+    "Quiz", "Practicing", "Reading", "Translation", "Learning",
 }
 
 PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|XXX|占位|＼width|[\u4e00-\u9fff]{0,2}略）?$)")
