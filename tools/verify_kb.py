@@ -26,6 +26,11 @@ KNOWN_SECTIONS = {
     "Translating", "Write to refute", "Watch for information",
     "Watch and discuss", "Meaning in context", "Sentence structure",
     "Error correction", "Translation skills", "Use of short sentences in narratives",
+    # 视听说系列小节词表（教师用书/U校园视听说单元结构）
+    "Warming up", "Listening & speaking", "News report", "Conversation",
+    "Passage", "Listening and understanding", "Thinking and speaking",
+    "Extended listening", "Speaking for communication", "Further listening",
+    "Scripts",
 }
 
 PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|XXX|占位|＼width|[\u4e00-\u9fff]{0,2}略）?$)")
