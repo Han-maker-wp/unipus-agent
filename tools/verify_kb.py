@@ -30,7 +30,8 @@ KNOWN_SECTIONS = {
     "Warming up", "Listening & speaking", "News report", "Conversation",
     "Passage", "Listening and understanding", "Thinking and speaking",
     "Extended listening", "Speaking for communication", "Further listening",
-    "Scripts",
+    "Scripts", "Viewing & speaking", "Viewing and understanding",
+    "Unit project",
 }
 
 PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|XXX|占位|＼width|[\u4e00-\u9fff]{0,2}略）?$)")
