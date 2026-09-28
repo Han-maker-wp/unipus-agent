@@ -46,7 +46,7 @@ KNOWN_SECTIONS = {
     "Group discussion", "Discuss and organize ideas",
 }
 
-PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|(?<![0-9X])XXX(?![0-9X])|占位|＼width|[一-鿿]{0,2}略）?$)")
+PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|(?<![0-9X])XXX(?![0-9X])|占位|＼width|[一-鿿]{0,2}略）$)")
 ANSWER_LINE = re.compile(r"^\s*(\d+[)、.])\s*(.+)$")
 
 
