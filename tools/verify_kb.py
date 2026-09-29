@@ -32,6 +32,10 @@ KNOWN_SECTIONS = {
     "Extended listening", "Speaking for communication", "Further listening",
     "Scripts", "Viewing & speaking", "Viewing and understanding",
     "Unit project",
+    # 视听说3 单元专有栏目（Listening to China 等）
+    "Listening to China", "Listening skills", "Before you listen",
+    "While you listen", "After you listen", "Viewing world cultures",
+    "Watching street interviews", "Thinking and speaking",
     # 新视野读写系列小节词表（第四版 U校园任务结构）
     "Reading the text", "Pre-reading activities", "Vocabulary learning",
     "Reading comprehension", "Understanding the text", "Critical thinking",
