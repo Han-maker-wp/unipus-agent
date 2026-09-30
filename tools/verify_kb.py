@@ -48,9 +48,13 @@ KNOWN_SECTIONS = {
     "Role-play", "Present ideas", "Wrapping up", "Culture notes", "Get ideas",
     "Opening up", "Taking in", "Speaking out", "Watching street interviews",
     "Group discussion", "Discuss and organize ideas",
+    # 综合训练系列（Part 结构）
+    "Vocabulary and structure", "Grammar study", "Writing", "General writing",
+    "Practical writing", "Multiple choice questions",
 }
 
-PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|(?<![0-9X])XXX(?![0-9X])|占位|＼width|[一-鿿]{0,2}略）$)")
+# XXX 白名单：教材范文本身用 XXX 作占位（XXX Road / XXX University / Room XXX 等），不算转录占位符
+PLACEHOLDER = re.compile(r"(待补充|TODO|TBD|(?<!Room )(?<![0-9X])XXX(?![0-9X])(?!\s*(?:Road|Street|Avenue|University|School|College|Company|Dormitory|Building|graduates|in your company))|占位|＼width|[一-鿿]{0,2}略）$)")
 ANSWER_LINE = re.compile(r"^\s*(\d+[)、.])\s*(.+)$")
 
 
