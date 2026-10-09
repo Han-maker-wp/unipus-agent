@@ -57,7 +57,7 @@ KNOWN_SECTIONS = {
     "More practice in listening", "Short conversations", "Long conversation",
     "Passages", "News", "Use the skills", "Practice",
     # 新标准大学英语（第二版）综合教程单元栏目
-    "Active reading", "First reading Task", "Reading in detail",
+    "Active reading", "First reading", "First reading Task", "Reading in detail",
     "Vocabulary exercises", "Language in use", "Guided writing", "Writing Task",
     "Unit test", "Vocabulary and Structure", "Banked Cloze",
     "Reading Comprehension", "Section A", "Section B", "Section C",
