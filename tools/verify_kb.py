@@ -56,6 +56,11 @@ KNOWN_SECTIONS = {
     "Role-playing", "Note them down", "Presenting", "Organize ideas",
     "More practice in listening", "Short conversations", "Long conversation",
     "Passages", "News", "Use the skills", "Practice",
+    # 新标准大学英语（第二版）综合教程单元栏目
+    "Active reading", "First reading Task", "Reading in detail",
+    "Vocabulary exercises", "Language in use", "Guided writing", "Writing Task",
+    "Unit test", "Vocabulary and Structure", "Banked Cloze",
+    "Reading Comprehension", "Section A", "Section B", "Section C",
 }
 
 # XXX 白名单：教材范文本身用 XXX 作占位（XXX Road / XXX University / Room XXX 等），不算转录占位符
@@ -74,7 +79,17 @@ def check_book(path: Path, issues: list):
         issues.append(f"{rel}: 缺少来源标注")
 
     cur = ""
+    in_comment = False
     for i, line in enumerate(text.splitlines(), 1):
+        # 跳过 <!-- 校订说明 --> 多行注释块（转录者备注，非知识库正文）
+        if in_comment:
+            if "-->" in line:
+                in_comment = False
+            continue
+        if "<!--" in line:
+            if "-->" not in line.split("<!--", 1)[1]:
+                in_comment = True
+            continue
         if line.startswith("## "):
             cur = line[3:].strip()
             # 小节名对齐：## 后应包含已知小节关键词之一
