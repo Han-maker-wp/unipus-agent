@@ -1,0 +1,8 @@
+# 依赖与本地运行产物 —— 绝不入库
+node_modules/
+
+# 浏览器持久 profile（含登录态 cookie）—— 绝不入库
+profile/
+
+# 日志
+*.log

@@ -1,0 +1,17 @@
+{
+  "name": "unipus-mcp",
+  "version": "0.1.0",
+  "description": "U校园 (uai.unipus.cn) 浏览器自动化 MCP：登录/导航/课程与任务目录/题目提取/受控回填/显式提交/挂机/知识库检索",
+  "type": "module",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test:login": "node test-login.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "playwright-core": "^1.56.0",
+    "zod": "^3.25.0"
+  }
+}
