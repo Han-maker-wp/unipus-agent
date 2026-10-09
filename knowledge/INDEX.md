@@ -34,7 +34,7 @@
 | 新视野大学英语 读写教程3答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247508264&idx=7&sn=158d9fe32c75ea35849f0950eef2f578&scene=21) | [新视野大学英语 读写教程3](./新视野大学英语（第三版）/新视野大学英语 读写教程3.md) |
 | 新视野大学英语 读写教程4答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247508264&idx=8&sn=0f8f231623568006afea4ea6da10e42c&scene=21) | [新视野大学英语 读写教程4](./新视野大学英语（第三版）/新视野大学英语 读写教程4.md) |
 | 新视野大学英语 视听说教程1答案 | ✅ Unit 1-8 全转录 | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247505856&idx=5&sn=db110ba846c8587a4d68e9f82c6c4cfb&scene=21) | [新视野大学英语 视听说教程1](./新视野大学英语（第三版）/新视野大学英语 视听说教程1.md) |
-| 新视野大学英语 视听说教程2答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247505856&idx=6&sn=fb4410cbefe280a04097f1f0ddd39830&scene=21) | [新视野大学英语 视听说教程2](./新视野大学英语（第三版）/新视野大学英语 视听说教程2.md) |
+| 新视野大学英语 视听说教程2答案 | ✅ Unit 1-8 全转录 | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247505856&idx=6&sn=fb4410cbefe280a04097f1f0ddd39830&scene=21) | [新视野大学英语 视听说教程2](./新视野大学英语（第三版）/新视野大学英语 视听说教程2.md) |
 | 新视野大学英语 视听说教程3答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247505856&idx=7&sn=601ca18e8216d97c09f950ada365c9cd&scene=21) | [新视野大学英语 视听说教程3](./新视野大学英语（第三版）/新视野大学英语 视听说教程3.md) |
 | 新视野大学英语 视听说教程4答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247505856&idx=8&sn=04c14887ce590d03addd6308774bf464&scene=21) | [新视野大学英语 视听说教程4](./新视野大学英语（第三版）/新视野大学英语 视听说教程4.md) |
 | 新视野大学英语 视听说教程1听力原文 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247498414&idx=1&sn=d38c1b7dcec809c9e796580692e2d8c8&scene=21) | [新视野大学英语 视听说教程1听力原文](./新视野大学英语（第三版）/新视野大学英语 视听说教程1听力原文.md) |
