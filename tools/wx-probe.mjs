@@ -56,9 +56,11 @@ for (const sel of [
     console.log(`[click-fail] ${sel}: ${e.message.slice(0, 80)}`);
   }
 }
-// 兜底：直接 JS 点击「继续访问」按钮（对话框可能处于不可见状态）
+// 兜底：仅当页面确实出现「继续访问」确认页时，才用 JS 直接点击其主按钮
 if (!clicked) {
   const r = await page.evaluate(() => {
+    const body = (document.body && document.body.innerText) || "";
+    if (!body.includes("继续访问")) return "skip:no-gate";
     const btns = Array.from(document.querySelectorAll("a,button"));
     const hit = btns.filter((b) => (b.innerText || "").trim() === "继续访问");
     if (hit.length) { hit[hit.length - 1].click(); return "js-click:" + hit.length; }
