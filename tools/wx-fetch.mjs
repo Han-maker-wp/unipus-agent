@@ -49,17 +49,80 @@ async function classify(page) {
   return "other";
 }
 
+// 「第三方商业营销信息」确认页：正文被弹窗顶掉，只留标题 + 封面图。
+// 特征：body 出现「请确认是否继续访问」/「第三方商业营销信息」。
+const GATE_MARK = ["请确认是否继续访问", "第三方商业营销信息"];
+function htmlHasGate(html) {
+  return GATE_MARK.some((m) => html.includes(m));
+}
+async function pageHasGate(page) {
+  const t = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
+  return GATE_MARK.some((m) => t.includes(m));
+}
+// 统计 #js_content 区域内的懒加载图数量，用来判断正文是否真的出来了
+function contentImgs(html) {
+  const i = html.indexOf('id="js_content"');
+  const tail = i >= 0 ? html.slice(i) : "";
+  return (tail.match(/data-src=/g) || []).length;
+}
+async function dismissGate(page) {
+  // 先试 Playwright 精确文本点击，再兜底 JS 点击
+  try {
+    const btn = page.locator("a,button").filter({ hasText: /^继续访问$/ }).last();
+    if (await btn.count()) {
+      await btn.click({ timeout: 4000 });
+      return "pw-click";
+    }
+  } catch { /* 落到 JS 兜底 */ }
+  return await page.evaluate(() => {
+    const btns = Array.from(document.querySelectorAll("a,button"));
+    const hit = btns.filter((b) => (b.innerText || "").trim() === "继续访问");
+    if (hit.length) { hit[hit.length - 1].click(); return "js-click:" + hit.length; }
+    const prim = document.querySelector("a.weui-btn_primary");
+    if (prim) { prim.click(); return "js-primary"; }
+    return "none";
+  }).catch(() => "err");
+}
+
 async function fetchOne(page, url, outPath) {
   for (let round = 1; round <= 4; round++) {
     // 每轮内快速重试若干次（kb-builder.md：间隔 2.5-4s 重试即过）
     for (let i = 0; i < 5; i++) {
       try { await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 }); } catch { /* poc 重定向 ERR_ABORTED */ }
       if (await waitContent(page)) {
+        // —— 关卡一：第三方营销信息确认页 ——
+        let gated = await pageHasGate(page);
+        if (gated) {
+          const how = await dismissGate(page);
+          console.error(`  检测到「继续访问」确认页 → 点击（${how}）`);
+          try { await page.waitForLoadState("networkidle", { timeout: 10000 }); } catch { /* ignore */ }
+          await sleep(jitter(2500));
+          gated = await pageHasGate(page);
+          if (gated) {
+            // 再点一次仍不行 → 当作被拦，重试
+            await dismissGate(page);
+            await sleep(jitter(3000));
+            gated = await pageHasGate(page);
+          }
+          if (gated) {
+            console.error(`  确认页未能通过，重试`);
+            await sleep(jitter(3000));
+            continue;
+          }
+        }
         const html = await page.content();
+        // 双保险：html 里若仍带关卡文案，或正文 0 图且确实被关过 → 重试
+        if (htmlHasGate(html) && contentImgs(html) === 0) {
+          console.error(`  落盘前仍见关卡文案且无正文图，重试`);
+          await sleep(jitter(3000));
+          continue;
+        }
         mkdirSync(dirname(outPath), { recursive: true });
         writeFileSync(outPath, html, "utf8");
         const title = (await page.title()).slice(0, 60);
-        return { ok: true, title, size: html.length };
+        const imgs = contentImgs(html);
+        if (imgs === 0) console.error(`  ⚠ 正文 0 图（可能是真·空壳文章）`);
+        return { ok: true, title, size: html.length, imgs };
       }
       const kind = await classify(page);
       if (kind === "banned") return { ok: false, title: "账号已被屏蔽", banned: true };
@@ -111,13 +174,18 @@ if (args.mode === "single") {
     const m = url.match(/mid=(\d+).*?idx=(\d+)/);
     const name = m ? `art-${m[1]}-${m[2]}.html` : `art-${i}.html`;
     const outPath = join(args.outDir, name);
-    if (existsSync(outPath) && readFileSync(outPath, "utf8").includes("js_content")) {
-      console.log(`[${i + 1}/${urls.length}] skip（已有） ${name}`);
-      ok++;
-      continue;
+    if (existsSync(outPath)) {
+      const cached = readFileSync(outPath, "utf8");
+      // 只有「有正文且不是确认页」才算有效缓存
+      if (cached.includes("js_content") && !htmlHasGate(cached)) {
+        console.log(`[${i + 1}/${urls.length}] skip（已有） ${name}`);
+        ok++;
+        continue;
+      }
+      if (htmlHasGate(cached)) console.log(`[${i + 1}/${urls.length}] 缓存实为「继续访问」确认页，重抓 ${name}`);
     }
     const r = await fetchOne(page, url, outPath);
-    if (r.ok) { ok++; console.log(`[${i + 1}/${urls.length}] OK ${name}  «${r.title}»`); }
+    if (r.ok) { ok++; console.log(`[${i + 1}/${urls.length}] OK ${name}  «${r.title}» 图=${r.imgs}`); }
     else { fail++; console.log(`[${i + 1}/${urls.length}] FAIL ${url}`); }
     if (i < urls.length - 1) await sleep(jitter(9000));
   }
