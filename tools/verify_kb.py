@@ -61,6 +61,10 @@ KNOWN_SECTIONS = {
     "Vocabulary exercises", "Language in use", "Guided writing", "Writing Task",
     "Unit test", "Vocabulary and Structure", "Banked Cloze",
     "Reading Comprehension", "Section A", "Section B", "Section C",
+    # 新未来大学英语 综合教程（Section / Episode / Text 结构）
+    "Section", "Episode", "Text A", "Text B", "Comprehension", "Preview task",
+    "Words and expressions", "Structure", "Communication skill",
+    "Warm up", "Wrap up", "Collocation",
 }
 
 # XXX 白名单：教材范文本身用 XXX 作占位（XXX Road / XXX University / Room XXX 等），不算转录占位符
