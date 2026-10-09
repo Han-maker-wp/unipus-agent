@@ -112,7 +112,7 @@
 | --- | --- | --- | --- |
 | 新未来大学英语 综合教程1答案 | ✅ Unit 1-6 全转录 | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247497319&idx=1&sn=3324961d7ea96705124af286ea4f3d0e&scene=21) | [新未来大学英语 综合教程1](./新未来大学英语/新未来大学英语 综合教程1.md) |
 | 新未来大学英语 综合教程2答案 | ✅ Unit 1-6 全转录 | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247497319&idx=2&sn=718589fa47661dbc81f2b8aa0d559f88&scene=21) | [新未来大学英语 综合教程2](./新未来大学英语/新未来大学英语 综合教程2.md) |
-| 新未来大学英语 综合教程3A答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247497319&idx=3&sn=ceeb8d3e05bf26062a080aeaeb7f674e&scene=21) | [新未来大学英语 综合教程3A](./新未来大学英语/新未来大学英语 综合教程3A.md) |
+| 新未来大学英语 综合教程3A答案 | ✅ Unit 1-6 全转录 | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247497319&idx=3&sn=ceeb8d3e05bf26062a080aeaeb7f674e&scene=21) | [新未来大学英语 综合教程3A](./新未来大学英语/新未来大学英语 综合教程3A.md) |
 | 新未来大学英语 综合教程3B答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247497319&idx=4&sn=9a804f5a99934b11fbc94f595912a8e0&scene=21) | [新未来大学英语 综合教程3B](./新未来大学英语/新未来大学英语 综合教程3B.md) |
 | 新未来大学英语 视听说教程1答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247497319&idx=5&sn=8ed90363a7a6979fb5f84ac55023c2a3&scene=21) | [新未来大学英语 视听说教程1](./新未来大学英语/新未来大学英语 视听说教程1.md) |
 | 新未来大学英语 视听说教程2答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247497319&idx=6&sn=6578e011a0850bf1c60e9d36fbe94c90&scene=21) | [新未来大学英语 视听说教程2](./新未来大学英语/新未来大学英语 视听说教程2.md) |
