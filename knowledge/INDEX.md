@@ -87,7 +87,7 @@
 | 新标准大学英语 综合教程1答案 | ✅ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247494566&idx=1&sn=99d07ed7efecf17f3a912b8d6d088d6e&scene=21) | [新标准大学英语 综合教程1](./新标准大学英语（第二版）/新标准大学英语 综合教程1.md) |
 | 新标准大学英语 综合教程2答案 | ✅ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247494566&idx=2&sn=116893e37abb0951475844cf03ebedcb&scene=21) | [新标准大学英语 综合教程2](./新标准大学英语（第二版）/新标准大学英语 综合教程2.md) |
 | 新标准大学英语 综合教程3答案 | ✅ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247494566&idx=3&sn=3512b2b1eea2e46958a1aa902bdce0a4&scene=21) | [新标准大学英语 综合教程3](./新标准大学英语（第二版）/新标准大学英语 综合教程3.md) |
-| 新标准大学英语 综合教程4答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247494566&idx=4&sn=315a0dc1af4eb4cea819cb448d598675&scene=21) | [新标准大学英语 综合教程4](./新标准大学英语（第二版）/新标准大学英语 综合教程4.md) |
+| 新标准大学英语 综合教程4答案 | ❌ 源文章为空壳（仅封面+空装饰框，无答案） | - | - |
 | 新标准大学英语 视听说教程1答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247512319&idx=5&sn=589f144a5116bdf115c59b8448704e0c&scene=21) | [新标准大学英语 视听说教程1](./新标准大学英语（第二版）/新标准大学英语 视听说教程1.md) |
 | 新标准大学英语 视听说教程2答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247512319&idx=6&sn=711da2e18c9ca8ae363ae31549863482&scene=21) | [新标准大学英语 视听说教程2](./新标准大学英语（第二版）/新标准大学英语 视听说教程2.md) |
 | 新标准大学英语 视听说教程3答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247512319&idx=7&sn=e1f13aec73a0e11629682ab79f2a7302&scene=21) | [新标准大学英语 视听说教程3](./新标准大学英语（第二版）/新标准大学英语 视听说教程3.md) |
