@@ -51,6 +51,11 @@ KNOWN_SECTIONS = {
     # 综合训练系列（Part 结构）
     "Vocabulary and structure", "Grammar study", "Writing", "General writing",
     "Practical writing", "Multiple choice questions",
+    # 新视野视听说（第三版）单元栏目（Listening to the world / Speaking for communication 分组）
+    "Sharing", "Listening", "Viewing", "Get a clue", "View it",
+    "Role-playing", "Note them down", "Presenting", "Organize ideas",
+    "More practice in listening", "Short conversations", "Long conversation",
+    "Passages", "News", "Use the skills", "Practice",
 }
 
 # XXX 白名单：教材范文本身用 XXX 作占位（XXX Road / XXX University / Room XXX 等），不算转录占位符
