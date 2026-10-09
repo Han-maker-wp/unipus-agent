@@ -6,9 +6,12 @@
   python tools/assemble_notes.py <code> <out.md> <header.md>
 
 - 自动按 u1,u2,u3… 顺序收集（直到文件缺失为止）
+- 单元稿支持两种形态：`<code>-uN.md`（整单元一个文件），或
+  `<code>-uN-a.md` / `<code>-uN-b.md` …（单元被拆成多段，按字母序拼接）
 - 自动剔除「无编号分组标签」被误写成 ## 的行（Listening to the world 等）
 - header.md 为该书的文件头（一级标题 + > 来源/进度说明）
 """
+import glob
 import io, os, re, sys
 
 BARE = {
@@ -20,17 +23,28 @@ BARE = {
 }
 
 
+def load_unit(notes: str, code: str, i: int):
+    """返回该单元的分段稿文本；不存在返回 None。"""
+    whole = os.path.join(notes, f"{code}-u{i}.md")
+    if os.path.exists(whole):
+        return io.open(whole, encoding="utf-8").read()
+    pieces = sorted(glob.glob(os.path.join(notes, f"{code}-u{i}-*.md")))
+    if pieces:
+        return "\n\n".join(io.open(p, encoding="utf-8").read().strip() for p in pieces)
+    return None
+
+
 def main():
     code, out, header_path = sys.argv[1], sys.argv[2], sys.argv[3]
     notes = ".cache/notes"
 
     parts, n = [], 0
     for i in range(1, 40):
-        p = os.path.join(notes, f"{code}-u{i}.md")
-        if not os.path.exists(p):
+        raw = load_unit(notes, code, i)
+        if raw is None:
             break
         n = i
-        lines = io.open(p, encoding="utf-8").read().split("\n")
+        lines = raw.split("\n")
         keep = [
             ln for ln in lines
             if not (ln.startswith("## ") and ln[3:].strip() in BARE)

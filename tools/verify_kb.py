@@ -80,6 +80,9 @@ def check_book(path: Path, issues: list):
 
     cur = ""
     in_comment = False
+    # 教师用书类文件：栏目名来自教师用书本身（Unit overview / Scenario / …），
+    # 与 U校园任务点本就不一一对应，跳过「小节名对齐」软校验。
+    is_teacher_book = "教师用书" in text[:800]
     for i, line in enumerate(text.splitlines(), 1):
         # 跳过 <!-- 校订说明 --> 多行注释块（转录者备注，非知识库正文）
         if in_comment:
@@ -93,7 +96,9 @@ def check_book(path: Path, issues: list):
         if line.startswith("## "):
             cur = line[3:].strip()
             # 小节名对齐：## 后应包含已知小节关键词之一
-            if "（结构页）" not in cur and not any(k in cur for k in KNOWN_SECTIONS):
+            if (not is_teacher_book and "（结构页）" not in cur
+                    and "（续）" not in cur
+                    and not any(k in cur for k in KNOWN_SECTIONS)):
                 issues.append(f"{rel}:{i} 小节名可能未对齐U校园：{cur!r}")
         m = ANSWER_LINE.match(line)
         if m and not m.group(2).strip():

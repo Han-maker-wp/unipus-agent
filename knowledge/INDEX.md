@@ -71,7 +71,7 @@
 
 | 教材 | 转录状态 | 答案源 | 本地笔记 |
 | --- | --- | --- | --- |
-| 新标准大学英语 综合教程1答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247511559&idx=1&sn=fb8141d8d6ae2d8982a85df65a1ddad8&scene=21) | [新标准大学英语 综合教程1](./新标准大学英语（第三版）/新标准大学英语 综合教程1.md) |
+| 新标准大学英语 综合教程1答案 | ✅ 源为教师用书，Unit 1-6 全转录（含参考答案） | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247511559&idx=1&sn=fb8141d8d6ae2d8982a85df65a1ddad8&scene=21) | [新标准大学英语 综合教程1（教师用书）](./新标准大学英语（第三版）/新标准大学英语 综合教程1（教师用书）.md) |
 | 新标准大学英语 综合教程2答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247511559&idx=2&sn=7a5a3f5899339c19821efe34be5dc9eb&scene=21) | [新标准大学英语 综合教程2](./新标准大学英语（第三版）/新标准大学英语 综合教程2.md) |
 | 新标准大学英语 综合教程3答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247511559&idx=3&sn=98042422d0d547811efcb3d43baca975&scene=21) | [新标准大学英语 综合教程3](./新标准大学英语（第三版）/新标准大学英语 综合教程3.md) |
 | 新标准大学英语 综合教程4答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkwNzUyODI0MQ==&mid=2247511559&idx=4&sn=f0a4619cf651fdf061a16433be6a64f0&scene=21) | [新标准大学英语 综合教程4](./新标准大学英语（第三版）/新标准大学英语 综合教程4.md) |
