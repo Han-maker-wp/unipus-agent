@@ -47,6 +47,7 @@ evaluate 语法，零依赖）。任何能操作浏览器、能读本地文件�
 | 支持 Agent Skills 标准（Claude Code / ZCode / Codex CLI…） | 整个目录拷进技能目录即装即用（`~/.claude/skills/unipus` 或 `~/.agents/skills/unipus`） |
 | 有规则文件但无技能机制（Cursor / Cline / Windsurf…） | 把 [agent-integration.md](references/agent-integration.md) 里的现成片段粘进 `AGENTS.md` / `.cursor/rules` |
 | 裸 LLM / 自研 agent / API 编排 | SKILL.md 进 system prompt + 挂任意浏览器 MCP；或直接跑 [scripts/playwright-runner.example.js](scripts/playwright-runner.example.js)（纯 Node + Playwright，无需任何 agent） |
+| 想用 MCP 工具替代「逐次内联 evaluate」 | 启动 [mcp/](mcp/README.md)（unipus-mcp，13 个工具），注册进宿主的 `mcp.servers` 即可 |
 
 **环境要求**：任意一种浏览器自动化（独立 Playwright / 浏览器类 MCP / 宿主内置浏览器）+
 本地文件读取；Python 3.10+ 仅知识库建库工具需要。完整能力清单与各工具映射见
@@ -102,6 +103,7 @@ A: 看 INDEX.md 是否有源链接；有链接就能按 kb-builder.md 让 AI 现
 │   ├── INDEX.md           # 21 系列 / 约 200 本总索引
 │   └── 新编大学英语（第四版）/…
 ├── tools/                 # 建库流水线：目录爬取 / 图片下载 / 质量校验
+├── mcp/                   # unipus-mcp：浏览器自动化 MCP 服务端（13 工具，可选接入，见 mcp/README.md）
 └── docs/screenshots/      # 界面结构存证
 ```
 
