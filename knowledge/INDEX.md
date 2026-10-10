@@ -221,7 +221,7 @@
 
 | 教材 | 转录状态 | 答案源 | 本地笔记 |
 | --- | --- | --- | --- |
-| 现代大学英语 精读1答案（第三版） | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247502473&idx=1&sn=ba0b1b59569c43f8d967eb33cdd05a48&scene=21) | [现代大学英语 精读1（第三版）](./现代大学英语/现代大学英语 精读1（第三版）.md) |
+| 现代大学英语 精读1答案（第三版） | ✅ 源为教师用书，Unit 1-12 全转录（含练习答案） | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247502473&idx=1&sn=ba0b1b59569c43f8d967eb33cdd05a48&scene=21) | [现代大学英语 精读1（第三版）教师用书](./现代大学英语/现代大学英语 精读1（第三版）教师用书.md) |
 | 现代大学英语 精读2答案（第三版） | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247502473&idx=2&sn=b26bcc853d8812be80f03efaf3079880&scene=21) | [现代大学英语 精读2（第三版）](./现代大学英语/现代大学英语 精读2（第三版）.md) |
 | 现代大学英语 精读3答案（第三版） | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247502473&idx=3&sn=a57c42a5b4d2549180eaae9fb1df114b&scene=21) | [现代大学英语 精读3（第三版）](./现代大学英语/现代大学英语 精读3（第三版）.md) |
 | 现代大学英语 精读4答案（第三版） | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzkyNDY5NDUzMg==&mid=2247502473&idx=4&sn=c8ab32f37cfe215758b245a571d2014d&scene=21) | [现代大学英语 精读4（第三版）](./现代大学英语/现代大学英语 精读4（第三版）.md) |
