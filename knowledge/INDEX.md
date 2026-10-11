@@ -275,8 +275,8 @@
 
 | 教材 | 转录状态 | 答案源 | 本地笔记 |
 | --- | --- | --- | --- |
-| 理解当代中国 英语读写教程答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzA3MDg2ODQ2OQ==&mid=2247543219&idx=1&sn=ae95f1195cdfe77fa8ae9e837c6d534b&scene=21) | [理解当代中国 英语读写教程](./理解当代中国系列/理解当代中国 英语读写教程.md) |
-| 理解当代中国 汉英翻译教程答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzA3MDg2ODQ2OQ==&mid=2247543219&idx=2&sn=d610b61b45b4dfa64b77c07cdf3baf30&scene=21) | [理解当代中国 汉英翻译教程](./理解当代中国系列/理解当代中国 汉英翻译教程.md) |
+| 理解当代中国 英语读写教程答案 | ✅ 改用 GitHub 教师用书 PDF 源（U1-10）文字提取 | [GitHub FLTRP-Comprehensive-3](https://github.com/Gatsby666-jay/FLTRP-Comprehensive-3) | [理解当代中国 英语读写教程（教师用书）](./理解当代中国系列/理解当代中国 英语读写教程（教师用书）.md) |
+| 理解当代中国 汉英翻译教程答案 | ✅ 改用 GitHub 教师用书 PDF 源（U3-12，缺 U1-2）文字提取 | [GitHub FLTRP-Translation](https://github.com/Gatsby666-jay/FLTRP-Translation) | [理解当代中国 汉英翻译教程（教师用书）](./理解当代中国系列/理解当代中国 汉英翻译教程（教师用书）.md) |
 | 理解当代中国 高级汉英笔译答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzA3MDg2ODQ2OQ==&mid=2247543219&idx=3&sn=119f11e311a064e7124b821bfa3f226b&scene=21) | [理解当代中国 高级汉英笔译](./理解当代中国系列/理解当代中国 高级汉英笔译.md) |
 | 理解当代中国 高级汉英笔译答案 | ⏳ | [微信文章](https://mp.weixin.qq.com/s?__biz=MzA3MDg2ODQ2OQ==&mid=2247543219&idx=4&sn=e256babbfea3cbe952861b40a1ae7562&scene=21) | [理解当代中国 高级汉英笔译](./理解当代中国系列/理解当代中国 高级汉英笔译.md) |
 
