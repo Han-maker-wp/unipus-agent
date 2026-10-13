@@ -6,3 +6,18 @@ profile/
 
 # 日志
 *.log
+
+# 一次性探查 / 枚举 / 运行状态草稿 —— 不入库
+# （正式产物：serve.mjs / runner.py / answers/ / ledger/，见 docs/RELEASE-待推送.md）
+_enum*.json
+_enum*.sh
+_enum*.js
+_enum_out.txt
+_dir.sh
+_go.sh
+_nav.sh
+_probe_task.sh
+_preflight.json
+_run_state.json
+_run_state*.json
+_answers.bak.json
